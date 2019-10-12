@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/sabade_kharid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:id="@+id/fram2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layoutDirection="rtl"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="15dp"
+                            android:paddingTop="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+                                android:id="@+id/majmoo_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="مجموع"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/majmoo_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:textAlignment="viewEnd"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/txtfont1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="تومان"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Mpeykis"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/hazineersal_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="هزینه ارسال"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="14sp" />
+
+                            <LinearLayout
+                                android:id="@+id/ajans"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/txtbeajans"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="به آژانس پرداخت شود"
+                                    android:textAlignment="viewEnd"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/peykis"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/hazineersal_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textAlignment="viewEnd"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/txtfont2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp"
+                                    android:text="تومان"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/free_deliverys"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="رایگان"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="14sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/bastebandi_box"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#fff"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+                                android:id="@+id/txthazinebastebandi"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="هزینه بسته بندی"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/bastebandi_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:textAlignment="viewEnd"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/txttoman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="تومان"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/my_res_takhfif"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+                                android:id="@+id/takhfif_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="تخفیفات"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/takhfif_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:textAlignment="viewEnd"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/txtfont3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="تومان"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp">
+
+                            <TextView
+                                android:id="@+id/mablaghkoll_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="مبلغ کل"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/mablaghkoll_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:textAlignment="viewEnd"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/txtfont4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:text="تومان"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/myaddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="15dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/address_factor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="1"
+                                android:lineSpacingExtra="12sp"
+                                android:text="خ فلان جنب فلان"
+                                android:textAlignment="center"
+                                android:textColor="#FA779E"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/boxedtcodetakhfif"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="15dp"
+                            android:gravity="right"
+                            android:layoutDirection="rtl">
+
+                            <LinearLayout
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="23dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true" />
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/takhfif"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="کد تخفیف دارید؟ وارد کنید..."
+                                android:paddingLeft="10dp"
+                                android:paddingTop="15dp"
+                                android:paddingRight="20dp"
+                                android:paddingBottom="15dp"
+                                android:textAlignment="center"
+                                android:textSize="12sp"
+                                tools:ignore="RtlCompat" />
+
+                            <TextView
+                                android:id="@+id/btn_check_takhfif"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="تایید"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/en_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="15dp"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+
+                                        <Spinner
+                                            android:id="@+id/spinner2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1" />
+
+                                    </RelativeLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="1dp"
+                                        android:layout_height="match_parent"
+                                        android:orientation="horizontal"></LinearLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1.3">
+
+                                        <TextView
+                                            android:id="@+id/txtxtimeselected"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:gravity="center_vertical"
+                                            android:paddingRight="10dp"
+                                            android:text="انتخاب زمان..."
+                                            android:textColor="@color/colorAccent"
+                                            android:textSize="13sp" />
+
+                                        <ImageView
+                                            android:id="@+id/imageView30"
+                                            android:layout_width="9dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentLeft="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginLeft="20dp" />
+
+                                        <RelativeLayout
+                                            android:id="@+id/spinner3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                        </RelativeLayout>
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/en_atplace"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="15dp"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="60dp"
+                                    android:layout_height="50dp"
+                                    android:backgroundTint="#15760ced"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageView10"
+                                        android:layout_width="29dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginRight="3dp"
+                                        android:tint="@color/colorPrimaryDark" />
+
+                                </LinearLayout>
+
+                                <Spinner
+                                    android:id="@+id/spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/just_atplace"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="15dp"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="60dp"
+                                    android:layout_height="50dp"
+                                    android:backgroundTint="#15760ced"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="29dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginRight="3dp"
+                                        android:tint="@color/colorPrimaryDark" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="right|center_vertical"
+                                    android:paddingRight="15dp"
+                                    android:text="پرداخت درب منزل"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/waypaymentbox"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+
+                                <LinearLayout
+                                    android:id="@+id/pardakhteonline"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:id="@+id/imageView14"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:id="@+id/textView5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:gravity="center"
+                                        android:text="پرداخت آنلاین"
+                                        android:textColor="@color/colorAccent" />
+
+                                    <TextView
+                                        android:id="@+id/textView7"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="پرداخت آنلاین از طریق کلیه کارت های عضو شتاب"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/kifepool"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp" />
+
+                                    <TextView
+                                        android:id="@+id/textView55"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:gravity="center"
+                                        android:text="پرداخت با کیف پول"
+                                        android:textColor="@color/colorAccent" />
+
+                                    <TextView
+                                        android:id="@+id/textView77"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="پرداخت از طریق موجودی کیف پول شما در پکاره"
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/alert_money"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="12sp"
+                                android:visibility="gone"
+                                tools:text="هشدار موجودی کیف پول" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/user"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:id="@+id/payment"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="15dp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingTop="12dp"
+                                android:paddingBottom="12dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:text="پرداخت و ثبت سفارش"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/sptimebox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="50dp"
+                        android:visibility="gone">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="90dp"
+                            android:layout_height="170dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="250dp"
+                            android:layout_marginBottom="20dp"
+                            app:cardBackgroundColor="@color/colorAccent"
+                            app:cardCornerRadius="2dp"
+                            app:cardElevation="5dp"
+                            app:cardPreventCornerOverlap="true">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recytime"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </android.support.v7.widget.CardView>
+                    </RelativeLayout>
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
