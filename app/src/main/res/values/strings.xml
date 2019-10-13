@@ -1,3 +1,66 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="test">
+      {\"url\": \"https:karbamabnd.ir/api/drycleanings/\",\"method\": \"POST\",
+  \"name\": \"خشکشویی\",
+  \"icon\": \"/static/frontend/drycleaning.png\",
+  \"context\": \"drycleaning\",
+  \"price\": \"https://karbamabnd.ir/static/uploads/price-dc06092307.png\",
+  \"poster\": \"/static/frontend/home_drycleaning.png\",
+  \"stages\": [{
+    \"type\": \"number\",
+    \"min\": 0,
+    \"max\": 20,
+    \"default\": 0,
+    \"description\": \"نوع و تعداد البسه را مشخص نمایید\",
+    \"description2\": null,
+    \"alert\": \"حداقل یک مورد را انتخاب نمایید\",
+    \"parameter\": [{\"parameter\": \"clothes\", \"title\": \"البسه\"},
+      {\"parameter\": \"blanket\", \"title\": \"پتو و ملحفه\"}, {\"parameter\": \"curtain\", \"title\": \"پرده\"}]
+  }, {
+    \"type\": \"switch\",
+    \"description\": \"تحویل اکسپرس\",
+    \"description2\": \"تحویل 24 ساعته با 30 درصد افزایش هزینه\",
+    \"parameter\": \"is_express\"
+  }, {
+    \"type\": \"switch\",
+    \"description\": \"فقط اتوکشی\",
+    \"description2\": \"با فعال کردن این گزینه تحویل 24 ساعته بدون افزایش هزینه خواهید داشت\",
+    \"parameter\": \"iron\"
+  }, {
+    \"type\": \"date_time\",
+    \"description\": \"زمان دریافت البسه\",
+    \"description2\": null,
+    \"parameter\": \"schedule_time\",
+    \"start\": 9,
+    \"end\": 22,
+    \"wait_time\": 120,
+    \"wait_type\": \"min\",
+    \"duration\": 2
+  }, {
+    \"type\": \"date_time\",
+    \"description\": \"زمان تحویل دم در منزل\",
+    \"description2\": null,
+    \"parameter\": \"delivery_time\",
+    \"start\": 9,
+    \"end\": 22,
+    \"wait_time\": 2,
+    \"wait_type\": \"day\",
+    \"duration\": 2
+  }, {
+    \"type\": \"address\",
+    \"description\": \"نشانی\",
+    \"description2\": null,
+    \"parameter\": \"address\"
+  }, {
+    \"type\": \"text\",
+    \"description\": \"توضیحات\",
+    \"description2\": null,
+    \"parameter\": \"description\"
+  }, {
+    \"type\": \"discount\",
+    \"description\": \"کد تخفیف\",
+    \"description2\": \"اگر کد تخفیفی دارید که مایل به استفاده هستید وارد نمایید.\"
+  }]
+}</string>
 </resources>
